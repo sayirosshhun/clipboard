@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  display: inline-block;
+  width: 450px;
+  height: 36px;
+  // border: 3px;
+  border-radius: 3px;
+  border: 1px solid rgb(158, 156, 156);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  // font-weight: bold;
+  margin: auto;
+  padding: 0 36px 0 10px;
+  // margin-top: auto;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.inputErrorMsg:focus {
+  transition-duration: 200ms;
+  outline: 1px solid rgb(252, 89, 89);
+}
+.inputNotErrorMsg:focus {
+  transition-duration: 200ms;
+  outline: 1px solid rgb(0, 0, 0);
+}
+img {
+  position: absolute;
+  margin: 0 0 0 209px;
+  width: 27px;
+  height: 27px;
+  // background-color: rgb(185, 185, 185);
+  cursor: pointer;
+
+  &:hover {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+  }
+}
+.toasty {
+  outline: 1px solid rgb(68, 238, 144);
+  border: none;
+  transition-duration: 200ms;
+}
